@@ -1,0 +1,33 @@
+[project]
+name = "curso-agno"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "acarvalhopinto", email = "andrecarvalhopinto@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "agno>=3.0.9",
+    "chromadb>=1.5.9",
+    "fastapi>=0.142.4",
+    "groq>=1.7.0",
+    "ipywidgets>=8.1.9",
+    "openai>=3.13.0",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.1.0",
+    "sqlalchemy>=2.0.54",
+    "streamlit>=1.65.0",
+    "tavily-python>=0.8.2",
+    "uvicorn>=0.54.0",
+    "watchdog>=6.0.0",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+curso-agno = "curso_agno:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
