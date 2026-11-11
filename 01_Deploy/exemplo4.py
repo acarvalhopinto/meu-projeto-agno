@@ -5,8 +5,8 @@ import json
 import streamlit as st 
 
 AGENT_ID = "agente_pdf"
-ENDPOINT = f"http://localhost:7777/agents/{AGENT_ID}/runs"
-
+#ENDPOINT = f"http://localhost:7777/agents/{AGENT_ID}/runs"
+ENDPOINT = f"https://meu-projeto-agno.onrender.com/agents/{AGENT_ID}/runs"
 
 # Conect Agno
 def get_response_stream(message: str):
